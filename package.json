@@ -1,0 +1,59 @@
+{
+  "name": "imagemin-gif2webp",
+  "version": "0.0.0",
+  "description": "gif2webp imagemin plugin",
+  "license": "MIT",
+  "repository": "imagemin/imagemin-gif2webp",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogo.sensui@gmail.com",
+    "url": "github.com/1000ch"
+  },
+  "maintainers": [
+    {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "sindresorhus.com"
+    },
+    {
+      "name": "Kevin Mårtensson",
+      "email": "kevinmartensson@gmail.com",
+      "url": "github.com/kevva"
+    },
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "github.com/shinnn"
+    }
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "compress",
+    "gif2webp",
+    "image",
+    "imageminplugin",
+    "img",
+    "gif",
+    "minify",
+    "optimize",
+    "webp"
+  ],
+  "dependencies": {
+    "exec-buffer": "^3.0.0",
+    "gif2webp-bin": "^1.0.0",
+    "is-gif": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "is-webp": "^1.0.0",
+    "pify": "^2.3.0",
+    "xo": "*"
+  }
+}
