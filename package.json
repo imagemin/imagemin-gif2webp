@@ -26,7 +26,7 @@
     }
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "scripts": {
     "test": "xo && ava"
@@ -47,13 +47,13 @@
   ],
   "dependencies": {
     "exec-buffer": "^3.0.0",
-    "gif2webp-bin": "^1.0.0",
-    "is-gif": "^1.0.0"
+    "gif2webp-bin": "^2.0.0",
+    "is-gif": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "is-webp": "^1.0.0",
-    "pify": "^2.3.0",
+    "pify": "^4.0.0",
     "xo": "*"
   }
 }
