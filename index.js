@@ -3,8 +3,8 @@ const execBuffer = require('exec-buffer');
 const isGif = require('is-gif');
 const gif2webp = require('gif2webp-bin');
 
-module.exports = opts => buf => {
-	opts = Object.assign({}, opts);
+module.exports = options => buf => {
+	options = {...options};
 
 	if (!Buffer.isBuffer(buf)) {
 		return Promise.reject(new TypeError('Expected a buffer'));
@@ -16,43 +16,43 @@ module.exports = opts => buf => {
 
 	const args = [];
 
-	if (opts.lossy) {
+	if (options.lossy) {
 		args.push('-lossy');
 	}
 
-	if (opts.mixed) {
+	if (options.mixed) {
 		args.push('-mixed');
 	}
 
-	if (opts.quality) {
-		args.push('-q', opts.quality);
+	if (options.quality) {
+		args.push('-q', options.quality);
 	}
 
-	if (opts.method) {
-		args.push('-m', opts.method);
+	if (options.method) {
+		args.push('-m', options.method);
 	}
 
-	if (opts.minimize) {
+	if (options.minimize) {
 		args.push('-min_size');
 	}
 
-	if (opts.kmin) {
-		args.push('-kmin', opts.kmin);
+	if (options.kmin) {
+		args.push('-kmin', options.kmin);
 	}
 
-	if (opts.kmax) {
-		args.push('-kmax', opts.kmax);
+	if (options.kmax) {
+		args.push('-kmax', options.kmax);
 	}
 
-	if (opts.filter) {
-		args.push('-f', opts.filter);
+	if (options.filter) {
+		args.push('-f', options.filter);
 	}
 
-	if (opts.metadata) {
-		args.push('-metadata', opts.metadata);
+	if (options.metadata) {
+		args.push('-metadata', options.metadata);
 	}
 
-	if (opts.multiThreading) {
+	if (options.multiThreading) {
 		args.push('-mt');
 	}
 
