@@ -1,4 +1,4 @@
-# imagemin-gif2webp [![Build Status](https://travis-ci.org/imagemin/imagemin-gif2webp.svg?branch=master)](https://travis-ci.org/imagemin/imagemin-gif2webp)
+# imagemin-gif2webp ![GitHub Actions Status](https://github.com/imagemin/imagemin-gif2webp/workflows/test/badge.svg?branch=master)
 
 > Gif2webp imagemin plugin
 
