@@ -1,14 +1,12 @@
-# imagemin-gif2webp ![GitHub Actions Status](https://github.com/imagemin/imagemin-gif2webp/workflows/test/badge.svg?branch=master)
+# imagemin-gif2webp
 
 > Gif2webp imagemin plugin
-
 
 ## Install
 
 ```
 $ npm install --save imagemin-gif2webp
 ```
-
 
 ## Usage
 
@@ -28,76 +26,75 @@ const imageminGif2webp = require('imagemin-gif2webp');
 })();
 ```
 
-
 ## API
 
-### imageminGif2webp([options])(buffer)
+### imageminGif2webp(options?)(buffer)
 
 #### options
 
 ##### lossy
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Encode image using lossy compression.
 
 ##### mixed
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 For each frame in the image, pick lossy or lossless compression heuristically.
 
 ##### quality
 
-Type: `number`<br>
+Type: `number`\
 Default: `75`
 
 Quality factor between `0` and `100`.
 
 ##### method
 
-Type: `number`<br>
+Type: `number`\
 Default: `4`
 
 Specify the compression method to use, between `0` (fastest) and `6` (slowest).
 
 ##### minimize
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Minimize output size. Lossless compression by default; can be combined with `quality`, `method`, `lossy` or `mixed` options.
 
 ##### kmin
 
-Type: `number`<br>
+Type: `number`
 
 Min distance between key frames.
 
 ##### kmax
 
-Type: `number`<br>
+Type: `number`
 
 Max distance between key frames.
 
 ##### filter
 
-Type: `number`<br>
+Type: `number`
 
 Filter strength between `0` (off) and `100`.
 
 ##### metadata
 
-Type: `string`<br>
+Type: `string`\
 Default: `xmp`
 
 Comma separated list of metadata to copy from the input to the output if present. Valid values: `all`, `none`, `icc`, `xmp`.
 
 ##### multiThreading
 
-Type: `boolean`<br>
+Type: `boolean`\
 Default: `false`
 
 Use multi-threading if available.
@@ -107,8 +104,3 @@ Use multi-threading if available.
 Type: `buffer`
 
 Buffer to optimize.
-
-
-## License
-
-MIT © [imagemin](https://github.com/imagemin)
